@@ -1,0 +1,45 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="a7770c82-d70b-2c71-a9be-c171b421e22e")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,194182,(e,t,n)=>{t.exports=e.r(161457)},603776,e=>{"use strict";e.i(350461);var t=e.i(391398),n=e.i(194182),r=e.i(191788);e.s([],411795),e.i(411795),e.s(["AppBannerIframe",0,function(){let[e,o]=(0,r.useState)(!1);return(0,r.useEffect)(()=>{window.location.hash&&"#reset"===window.location.hash&&o(!0)},[]),(0,t.jsxs)(t.Fragment,{children:[e?(0,t.jsx)("div",{children:(0,t.jsx)("button",{className:"btn",onClick:()=>{localStorage.removeItem("BRANCH_WEBSDK_KEYjourneyDismissals"),window.location.reload()},style:{background:"#333",color:"#fff",padding:"4px"},children:"Show Banner"})}):"",(0,t.jsx)(n.default,{id:"show-banner-iframe",strategy:"lazyOnload",children:`
+        (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking getBrowserFingerprintId".split(" "), 0);
+
+        branch.init("key_live_jpmoQCKshT4dmEI1OZyuGmlmjffQNTlA", function(err, data) {
+        });
+        branch.getBrowserFingerprintId((err, fingerprint) => {
+          if (err) {
+            return;
+          }
+          window.BRANCH_INITIATED = true;
+          window.BRANCH_ID = fingerprint;
+        });
+
+        branch.addListener('didShowJourney', () => {
+          let bottomWidgets = document.getElementById('bottom-widgets');
+          const cookieBanner = document.querySelector('.cc-banner');
+          if (bottomWidgets) {
+            let bannerIframe = null;
+            const bannerIframeCheck = setInterval(function() {
+              bannerIframe = document.getElementById('branch-banner-iframe');
+              if (bannerIframe && bottomWidgets.offsetHeight > 1) {
+                clearInterval(bannerIframeCheck);
+                bannerIframe.classList.add('branch-banner-iframe-loaded');
+                bannerIframe.style.bottom = (bottomWidgets.offsetHeight - 1) + 'px';
+                if (cookieBanner) {
+                  cookieBanner.style.bottom = (bottomWidgets.offsetHeight - 1) + bannerIframe.offsetHeight + 'px';
+                }
+                setInterval(() => {
+                  bottomWidgets = document.getElementById('bottom-widgets');
+                  if (bottomWidgets) {
+                    bannerIframe.style.bottom = (bottomWidgets.offsetHeight - 1) + 'px';
+                  }
+                  if (cookieBanner) {
+                    cookieBanner.style.bottom = (bottomWidgets.offsetHeight - 1) + bannerIframe.offsetHeight + 'px';
+                  }
+                }, 1000);
+              }
+            }, 50);
+          }
+        });
+
+        `})]})}],603776)},815756,e=>{e.n(e.i(603776))}]);
+
+//# debugId=a7770c82-d70b-2c71-a9be-c171b421e22e

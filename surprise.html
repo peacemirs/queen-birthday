@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+       <meta charset="UTF-8">
+
+      <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+        <title>
+           Happy Birthday My Queen 💖
+           <p class="celebration-line">
+
+         🎉 🎂 🌹 Happy Birthday Baby 🌹 🎂 🎉
+
+         </p>
+        </title>
+        
+
+      <link rel="stylesheet"
+      href="surprise.css">
+
+
+</head>
+
+<body>
+    <canvas id="fireworks"></canvas>
+
+
+<!-- BACKGROUND MUSIC -->
+
+<audio
+    id="bgMusic"
+    autoplay
+    loop>
+
+    <source
+        src="music/surprisesong.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+<!-- MUSIC BUTTON -->
+
+<div class="music-controls">
+
+    <button
+        id="musicToggle"
+        class="music-btn">
+
+        🎵 Pause Music
+
+    </button>
+
+</div>
+
+<!-- FLOATING ITEMS -->
+
+<div class="floating-items">
+
+    <span>💖</span>
+    <span>🌹</span>
+    <span>🧸</span>
+    <span>🍫</span>
+    <span>🎂</span>
+
+    <span>💖</span>
+    <span>🌹</span>
+    <span>🧸</span>
+    <span>🍫</span>
+    <span>🎂</span>
+
+</div>
+
+<div class="container">
+
+    <!-- TITLE -->
+
+    <h1>
+
+        Happy Birthday My Queen 💖
+
+    </h1>
+
+    <p class="subtitle">
+
+        Today is all about you baby.
+        You deserve all the happiness in the world. 💕
+
+    </p>
+    <div class="typewriter-box">
+
+      <p id="typewriter"></p>
+    </div>
+
+    <!-- MAIN PHOTO -->
+
+    <div class="hero-media">
+
+        <img
+            id="slideshow"
+            src="images\Screenshot_20260617-013624.jpg"
+            alt="Baby Stee">
+
+    </div>
+
+    <!-- VOICE NOTE -->
+
+    <div class="voice-card">
+
+        <h3>
+
+            🎙️ A Message From Your Baby
+
+        </h3>
+
+        <p>
+
+            Put on your headphones for this one, baby 💖
+
+        </p>
+
+        <audio
+            id="voiceNote"
+            controls>
+
+            <source
+                src="voice note.ogg"
+                type="audio/mpeg">
+
+        </audio>
+
+    </div>
+
+    <!-- GIFTS SECTION -->
+
+    <section class="gift-section">
+
+        <p class="gift-tag">
+
+            Just A Few Little Things For My Birthday Girl
+
+        </p>
+
+        <h2>
+
+            🎁 Gifts For You 🎁
+
+        </h2>
+
+        <div class="gift-grid">
+
+            <div class="gift-card">
+
+                <img
+                    src="images/flowers.jpg"
+                    alt="Flowers">
+
+                <h3>
+
+                    🌹 Flowers
+
+                </h3>
+
+                <p>
+
+                    A bouquet for the most beautiful girl.
+
+                </p>
+
+            </div>
+
+            <div class="gift-card">
+
+                <img
+                    src="images/chocolate.jpg"
+                    alt="Chocolate">
+
+                <h3>
+
+                    🍫 Chocolate
+
+                </h3>
+
+                <p>
+
+                    Something sweet for someone so sweet.
+
+                </p>
+
+            </div>
+
+            <div class="gift-card">
+
+                <img
+                    src="images/teddybear.jpg"
+                    alt="Teddy">
+
+                <h3>
+
+                    🧸 Teddy Bear
+
+                </h3>
+
+                <p>
+
+                    A soft hug from your baby.
+
+                </p>
+
+            </div>
+
+            <div class="gift-card">
+
+                <img
+                    src="images/birthdaycake.jpg"
+                    alt="Cake">
+
+                <h3>
+
+                    🎂 Cake & Ice Cream
+
+                </h3>
+
+                <p>
+
+                    A birthday isn't complete without something sweet.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECRET MESSAGE -->
+
+    <div class="gift-message-box">
+
+        <div class="love-icons">
+
+            💖 ✨ 🌸 💕 🌹
+
+        </div>
+
+        <h3>
+
+            A Little Hint From Your Baby 😌
+
+        </h3>
+
+        <p>
+
+            Baby...
+
+            There may be a few more surprises waiting for you.
+
+            Take a little look around your room,
+            somewhere nearby, or ask Hellen 🌝. <br>
+
+            Your baby might have prepared
+            something special for his queen.
+            Virtual Gifts come into reality... 🌚
+
+        </p>
+
+    </div>
+
+    <!-- LOVE NOTE -->
+
+    <section class="special-section">
+
+        <button
+            id="loveBtn"
+            class="special-btn">
+
+            💌 Open My Love Note
+
+        </button>
+
+        <div
+            id="loveNote"
+            class="hidden-section">
+
+            <h3>
+
+                To My Baby 💖
+
+            </h3>
+
+            <p>
+
+                Thank you for your smile.
+
+                Thank you for your kindness.
+
+                Thank you for your beautiful heart.
+
+                Thank you for your sweetness.
+
+                Thank you for every memory we have shared.
+
+                Thank you for your sacrifices.
+                
+                Thankyou for your support.
+
+                Thankyou for your prayers.
+
+
+            </p>
+
+            <p>
+                Actually being in love with you is the most interesting thing that ever happened in my life.
+                From the first time I saw you, my eyes stopped for a moment, I was constatly peeking at you.
+                I was running away from you as you wanted to catch me but now see us now , we finally have each other.
+                Days passed, months passed , we fell in love slowly by slowly though there were still some holding back,
+                A year passed, it didn't feel good for both of us. We felt as if they were something missing in our lives.
+                But as the word of God says that let nothing separate what God joined himself ,time brought us back together.
+                With patience and waiting and knowing about each other well, we had an unbreakable bond called love.
+                And promised to never stop now, till marriage and forever.
+                Baby, you mean alot to me and I love you more than words or this little world I made for you could explain.
+                You are the best part of my life and I can't wait to tell our kids about our story.
+                The time we've known each other may seem short by counting but it has built alot than 100 years could ever. 
+                The love, trust, patience, forgiveness, sacrifices, emotions...; 
+                I couldn't say it came by our way but God's in this story too. 
+                That's why I thank Him so much whenever I remember that you are mine and I'm yours.
+                My darling, whenever I see you , It makes me thank God, you are proof that God really has a beautiful creation.
+                Crafted by His hands only , you are the best creation in my eyes , you are the one a good shepherd would leave 99 for.
+                And since we walk in His feet, let me be your shepherd baby.
+                I promise to lead you well and to take you to alot of amazing places with green grass hhh,
+                we will eat alot, drink alot, spend alot of time together, and have alot of cuddles.
+                Baby, me and you forever right, I wont ever let you go you know that. Let me be your man, the father of your kids.
+                I'm sorry I had to make this surprise like this , I know by now you are blushing in public if not crying, but I had to.
+                Remember I promised you, that I will give you the best birthdays you'll ever have. This is the beginning
+                and there will be more as you grow up into the wonderful woman you are. 
+                We will continue working hard together, being patient, following God's way over ours 
+                and I promise that thIs will turn out into a big thing than we ever imagined. Happy Birthday again my beautiful baby queen princess star flower.
+                Don't hold yourself in enjoying, please enjoy to the fullest and if by now, I'm from work I will help you enjoy.
+                I know you are gonna be wondering why I didn't make much on your day, but its all in my plans,
+                don't worry I thought and remembered about your day long time ago, remember how I showed you the codes in a blurry video,
+                I was building this and now the day has come , the queen is now 19, she has grown alot and I'm so proud of her. 
+                You are my Queen and will forever be. <br>
+
+                Happy Birthday Kizito Mahoro Monalisa Stella. 💓🎂🥳 <br>
+            </p>
+
+            <p>
+
+                I hope this birthday brings you happiness,
+                success,
+                peace,
+                beautiful memories,
+                and endless reasons to smile & blush. 
+
+            </p>
+
+            <p>
+
+                Happy Birthday Baby, Ndagukunda 💕
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROMISE -->
+
+    <section class="special-section">
+
+        <button
+            id="promiseBtn"
+            class="special-btn">
+
+            🌙 Read My Promise
+
+        </button>
+
+        <div
+            id="promiseText"
+            class="hidden-section">
+
+            <h3>
+
+                My Promise To You 🌙
+
+            </h3>
+
+            <p>
+
+                I promise to always wish the best for you. <br>
+
+                I promise to celebrate your victories. <br>
+
+                I promise to stand with you and lift you in your struggles. <br>
+
+                I promise to support your dreams. <br>
+
+                I promise to appreciate you. <br>
+                
+                I promise to never leave you and to never stop loving you. <br>
+
+                I promise to continue creating beautiful memories with you. <br>
+
+                I promise to work hard for us. <br>
+
+                I promise to marry you and have ≥4 kids with you. <br>
+
+                I promise to always lead you to God. <br>
+
+            </p>
+
+            <p>
+
+                Most importantly,
+
+                I promise to never stop being grateful
+                that you are part of my life. 💖
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="secret-hearts">
+
+     <h2>
+        Click These Hearts 💖
+     </h2>
+
+        <div class="heart-grid">
+
+          <span class="secret-heart"
+          data-message="You have the cutest smile 💕">
+            💖
+           </span>
+
+          <span class="secret-heart"
+           data-message="I love seeing you happy 🌸">
+           💖
+           </span>
+
+           <span class="secret-heart"
+           data-message="You're special to me 😌">
+           💖
+           </span>
+
+           <span class="secret-heart"
+            data-message="Happy Birthday Baby 🎂">
+            💖
+           </span>
+
+        </div>
+
+    </section>
+
+    <!-- SIGNATURE -->
+
+    <p class="signature">
+
+        With Love,
+
+        <br><br>
+
+        Your Baby And Favorite Person,
+
+        <br>
+
+        Samir 😌🥹
+
+    </p>
+
+<!-- MESSAGE SECTION -->
+
+<section class="message-section">
+
+    <h2>
+
+        💌 A Little Message For Your Baby
+
+    </h2>
+
+    <p class="message-intro">
+
+        Baby...
+
+        Before you leave this little world,
+
+        I'd love to know how you felt.
+
+        Every word you write will become one of my favorite memories. ❤️
+
+    </p>
+
+    <form id="messageForm">
+          <form id="messageForm">
+
+        <input
+            type="text"
+            id="senderName"
+            placeholder="Your Name (Optional)">
+           <textarea
+            id="message"
+            placeholder="Write anything you want to tell your baby..."
+            required></textarea>
+
+        <button
+              id="sendBtn"
+              type="submit">
+
+            <span class="plane">
+
+                💌
+
+            </span>
+
+            <span class="btn-text">
+
+             Send To Your Baby
+
+            </span>
+
+        </button>
+
+    </form>
+
+    <div id="successMessage">
+
+        ❤️
+
+        <h3>
+
+            Delivered To My Heart
+
+        </h3>
+
+        <p>
+
+            Thank you baby...
+
+            Your words have safely reached my heart.
+
+            I'll treasure them forever.
+
+        </p>
+
+    </div>
+
+</section>
+
+    <p style="text-align:center;
+     margin-top:40px;
+     font-size:0.9rem;
+     opacity:0.7;">
+
+     Made with love, late nights,
+     and a lot of thoughts about you 💖
+
+    </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="surprise.js"></script>
+
+</body>
+
+</html>
