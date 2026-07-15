@@ -496,37 +496,56 @@
 
     </p>
 
-    <form id="messageForm">
-          <form id="messageForm">
+    <form
+    id="messageForm"
+    action="https://formsubmit.co/rubonezasamir@gmail.com"
+    method="POST">
 
-        <input
-            type="text"
-            id="senderName"
-            placeholder="Your Name (Optional)">
-           <textarea
-            id="message"
-            placeholder="Write anything you want to tell your baby..."
-            required></textarea>
+    <input
+        type="text"
+        id="senderName"
+        name="name"
+        placeholder="Your Name (Optional)">
 
-        <button
-              id="sendBtn"
-              type="submit">
+    <textarea
+        id="message"
+        name="message"
+        placeholder="Write anything you want to tell your baby..."
+        required></textarea>
 
-            <span class="plane">
+    <button
+        id="sendBtn"
+        type="submit">
 
-                💌
+        <span class="plane">💌</span>
 
-            </span>
+        <span class="btn-text">
+            Send To Your Baby
+        </span>
 
-            <span class="btn-text">
+    </button>
 
-             Send To Your Baby
+    <input
+        type="hidden"
+        name="_subject"
+        value="💖 New Message From Queen S">
 
-            </span>
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false">
 
-        </button>
+    <input
+        type="hidden"
+        name="_template"
+        value="table">
 
-    </form>
+    <input
+        type="hidden"
+        name="_next"
+        value="">
+
+</form>
 
     <div id="successMessage">
 

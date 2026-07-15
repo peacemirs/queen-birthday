@@ -450,14 +450,8 @@ window.addEventListener(
 );
 
 // ===============================
-// EMAIL JS
+// SEND MESSAGE (FORMSUBMIT)
 // ===============================
-
-emailjs.init({
-
-    publicKey:"8nY-LRID3eTIFMs0R"
-
-});
 
 const form =
 document.getElementById("messageForm");
@@ -468,21 +462,22 @@ document.getElementById("sendBtn");
 const success =
 document.getElementById("successMessage");
 
-form.addEventListener(
+if(form){
 
-"submit",
-
-function(e){
+form.addEventListener("submit",function(e){
 
 e.preventDefault();
 
 sendBtn.classList.add("fly");
+
+sendBtn.innerHTML="✈️ Flying To Samir...";
+
 const rect=
 sendBtn.getBoundingClientRect();
 
 let count=0;
 
-const hearts=
+const interval=
 setInterval(()=>{
 
 createHeartTrail(
@@ -497,69 +492,43 @@ count++;
 
 if(count>15){
 
-clearInterval(
-hearts
-);
+clearInterval(interval);
 
 }
 
 },70);
 
-sendBtn.innerHTML="✈️ Flying...";
-
-const templateParams={
-
-name:
-
-document.getElementById("senderName").value ||
-
-"Queen S",
-
-message:
-
-document.getElementById("message").value,
-
-time:
-
-new Date().toLocaleString()
-
-};
-
-emailjs.send(
-
-"service_ivsl9rf",
-
-"template_4csevqg",
-
-templateParams
-
-)
-
-.then(function(){
+// Wait for animation
 
 setTimeout(()=>{
+
+fetch(form.action,{
+
+method:"POST",
+
+body:new FormData(form)
+
+})
+
+.then(()=>{
 
 form.style.display="none";
 
 success.style.display="block";
 
-},1800);
-
 })
 
-.catch(function(error){
+.catch(()=>{
 
-alert(
-
-"Something went wrong 😢"
-
-);
-
-console.log(error);
+alert("Oops! Something went wrong.");
 
 });
 
+},2200);
+
 });
+
+}
 
 // ==========================
 // HEART TRAIL

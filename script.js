@@ -160,7 +160,7 @@ surpriseBtn.addEventListener(
         "💖 Enter Our Anniversary Date For Your Final Surprise 🌚:"
     );
 
-    if(password === "12012026"){
+    if(password === "1201"){
 
         window.location.href =
         "surprise.html";
